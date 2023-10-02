@@ -1,4 +1,4 @@
 pytest-cov
-pytest-capturelog
+pytest-catchlog
 pytest-timeout
 pytest
