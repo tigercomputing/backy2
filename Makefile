@@ -72,11 +72,5 @@ release: env docs deb
 	curl -i -H "Authorization: token $(GITHUB_ACCESS_TOKEN)" -H "Accept: application/vnd.github.manifold-preview" -H "Content-Type: application/octet-stream" --data-binary @dist/backy2_$(CURRENT_VERSION)_all.deb https://uploads.github.com/repos/wamdam/backy2/releases/$$RELEASE_ID/assets\?name\=backy2_$(CURRENT_VERSION)_all.deb; \
 	curl -i -H "Authorization: token $(GITHUB_ACCESS_TOKEN)" -H "Accept: application/vnd.github.manifold-preview" -H "Content-Type: application/octet-stream" --data-binary @dist/backy2-$(CURRENT_VERSION).tar.gz https://uploads.github.com/repos/wamdam/backy2/releases/$$RELEASE_ID/assets\?name\=bacly2_$(CURRENT_VERSION).tar.gz
 
-	# docs release
-	@echo "--------------------------------------------------------------------------------"
-	@echo "Releasing docs and website"
-	#cd docs && $(MAKE) html
-	cd website && ./sync.sh
-
 .PHONY : bbb
 bbb:
