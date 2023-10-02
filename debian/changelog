@@ -1,3 +1,14 @@
+backy2 (2.14.0) unstable; urgency=low
+
+  * New release formalising TCL fork.
+  * Fix Debian 12 compatibility with python3-cryptodome and Cryptodome Python
+    imports.
+
+  [ David Caro ]
+  * Add support for sqlalchemy >=1.4
+
+ -- Chris Boot <crb@tiger-computing.co.uk>  Mon,  2 Oct 2023 16:16:54 +0100
+
 backy2 (2.13.8) unstable; urgency=low
 
   * Fix: calculate due time for verbose log correctly
