@@ -1,7 +1,7 @@
-from Crypto.Cipher import AES
-from Crypto.Hash import SHA512
-from Crypto.Protocol.KDF import PBKDF2
-from Crypto.Random import get_random_bytes
+from Cryptodome.Cipher import AES
+from Cryptodome.Hash import SHA512
+from Cryptodome.Protocol.KDF import PBKDF2
+from Cryptodome.Random import get_random_bytes
 from functools import partial
 from backy2.aes_keywrap import aes_wrap_key, aes_unwrap_key
 from threading import Lock

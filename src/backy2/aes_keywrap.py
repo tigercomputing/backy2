@@ -14,7 +14,7 @@ import struct
 # TODO: dependency flexibility; make pip install aes_keywrap[cryptography], etc work
 from typing import Tuple
 
-from Crypto.Cipher import AES
+from Cryptodome.Cipher import AES
 
 QUAD = struct.Struct('>Q')
 
