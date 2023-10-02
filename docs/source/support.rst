@@ -6,7 +6,7 @@ Support
 Issue Tracker
 -------------
 
-https://github.com/wamdam/backy2/issues
+https://github.com/tigercomputing/backy2/issues
 
 
 Documentation

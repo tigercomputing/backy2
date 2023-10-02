@@ -9,7 +9,7 @@ explicitly mentioned (hint: it's not much!).
 
 Checkout the repository::
 
-    $ git clone https://github.com/wamdam/backy2
+    $ git clone https://github.com/tigercomputing/backy2
     $ cd backy2
 
 Create a virtualenv::

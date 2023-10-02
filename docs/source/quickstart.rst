@@ -40,7 +40,7 @@ Ubuntu 18.04
 
 Installation::
 
-    Get the latest release from https://github.com/wamdam/backy2/releases
+    Get the latest release from https://github.com/tigercomputing/backy2/releases
     sudo dpkg -i backy2_*.deb          # Install the debian archive
     sudo apt-get -f install            # Install the dependencies
 
