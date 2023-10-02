@@ -26,7 +26,7 @@ for backy2 to run (as we depend on the latest tech), let's install
 them with the python package manager::
 
    apt install python3-pip
-   pip3 install pycryptodome zstandard
+   pip3 install pycryptodomex zstandard
 
 Now, edit backy2 and replace the ``encryption_key`` by something
 created by ::
