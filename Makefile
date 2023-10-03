@@ -13,8 +13,7 @@ all: docs deb
 
 .PHONY : deb
 deb:
-	fakeroot make -f debian/rules clean
-	fakeroot make -f debian/rules binary
+	dpkg-buildpackage -us -uc
 	mkdir -p dist
 	cp ../backy2_$(CURRENT_VERSION)_all.deb dist/
 

@@ -13,6 +13,7 @@ Build-Depends:
 Standards-Version: 3.9.6
 Homepage: https://github.com/tigercomputing/backy2
 XS-Python-Version: >= 3.4
+Rules-Requires-Root: no
 
 Package: backy2
 Architecture: all

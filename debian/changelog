@@ -8,6 +8,7 @@ backy2 (2.14.0) unstable; urgency=low
   * Fix build in clean chroot by adding missing Build-Depends.
   * Remove useless debian/watch file.
   * Add debian/source/options to build clean source tarballs.
+  * Set Rules-Requires-Root: no.
 
   [ David Caro ]
   * Add support for sqlalchemy >=1.4
