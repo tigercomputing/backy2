@@ -16,10 +16,13 @@ deb:
 	fakeroot make -f debian/rules clean
 	fakeroot make -f debian/rules binary
 	mkdir -p dist
-	ln -f ../backy2_$(CURRENT_VERSION)_all.deb dist
+	cp ../backy2_$(CURRENT_VERSION)_all.deb dist/
 
+env: SETUPTOOLS_USE_DISTUTILS=stdlib
 env: setup.py
 	python3 -mvenv env
+	$(PYTHON) -m ensurepip --upgrade
+	$(PIP) install -U setuptools
 	$(PYTHON) setup.py develop
 	$(PIP) install -r requirements_tests.txt
 	$(PIP) install -r requirements_docs.txt
@@ -52,15 +55,12 @@ docs: env
 	#cp docs/source/_static/index.html docs/build/html
 
 .PHONY : release
-release: env docs deb
+release: env deb
 	@echo ""
 	@echo "--------------------------------------------------------------------------------"
 	@echo Releasing Version $(CURRENT_VERSION)
 
-	# pypi release
-	@echo "--------------------------------------------------------------------------------"
-	@echo Pypi...
-	$(PYTHON) setup.py sdist upload
+	$(PYTHON) setup.py sdist
 
 	# github release
 	@echo "--------------------------------------------------------------------------------"
