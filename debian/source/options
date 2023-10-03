@@ -1,4 +1,5 @@
 tar-ignore = ".git"
+tar-ignore = ".github-access-token"
 tar-ignore = ".ruff_cache"
 tar-ignore = "dist"
 tar-ignore = "env"
