@@ -1,34 +1,10 @@
-What's the state of this project?
-#################################
+What's the state of this fork?
+##############################
 
-backy2 is an artefact of my hosting company where I recognized that there are
-no sane and reliable backup solutions out there for block-based / snapshot-based
-backup in the many-terabyte to petabyte range.
-
-backy2 was the second backup software I wrote for our usecases. The first one
-(you guessed rightm it was called "backy") was designed for .img based virtual
-machines and had designated features for that.
-
-backy2 was designed around our mostly ceph/rbd-based cluster, that's where the
-most features come from.
-
-Meanwhile we have switched to local lvm thin pools and we have a very clever,
-fast and new pull-backup solution, for which I (of course) wrote the third
-iteration of backup software, however it's neither called backy3, nor it's open
-source (for now).
-
-That's why this project receives only very minimal maintenance from me and practically
-no updates. This means you can expect to have installation issues due to
-non-existing libraries on modern operating system versions. However they should
-be rather easy to be fixed and in some regard I'm willing to do this. So there's
-no reason to panic if you're using backy2 in 2022 and plan to use it for the
-next years. The python code will most likely be valid in several years and libs
-have shown to be very compatible in never versions in the last years.
-
-The code however is stable (no guarantees though), the software is feature
-complete and that's the main reason why there have been no significant commits
-in the last months. We have performend many years of stable backups and restores
-with it.
+The upstream `backy2 <https://github.com/wamdam/backy2>`_ project is `on hiatus
+<https://github.com/wamdam/backy2#whats-the-state-of-this-project>`_. This
+fork exists to satisfy the needs of `Tiger Computing
+<https://www.tiger-computing.co.uk/>`_'s clients.
 
 
 What is backy2?
