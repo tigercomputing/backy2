@@ -3,6 +3,11 @@ backy2 (2.14.0) unstable; urgency=low
   * New release formalising TCL fork.
   * Fix Debian 12 compatibility with python3-cryptodome and Cryptodome Python
     imports.
+  * Switch to Debhelper 13.
+  * Set source format to 3.0 (native).
+  * Fix build in clean chroot by adding missing Build-Depends.
+  * Remove useless debian/watch file.
+  * Add debian/source/options to build clean source tarballs.
 
   [ David Caro ]
   * Add support for sqlalchemy >=1.4

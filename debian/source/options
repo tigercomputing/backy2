@@ -1,0 +1,7 @@
+tar-ignore = ".git"
+tar-ignore = ".ruff_cache"
+tar-ignore = "dist"
+tar-ignore = "env"
+tar-ignore = "htmlcov"
+tar-ignore = "report.xml"
+tar-ignore = "src/backy2.egg-info"
